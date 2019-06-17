@@ -11,11 +11,9 @@ class App extends Component {
     }
 
     componentDidMount() {
-        (() => {
-            return import(/* webpackChunkName: "productsJSON" */ '../../public/products').then(({ default: store }) => {
+             import(/* webpackChunkName: "productsJSON" */ '../../public/products').then(({ default: store }) => {
                 this.setState({store: store})
             })
-        })()
     }
 
     render() {
@@ -27,11 +25,8 @@ class App extends Component {
                 }
             </div>
 
-
         )
     }
 }
-
-App.propTypes = {}
 
 export default App

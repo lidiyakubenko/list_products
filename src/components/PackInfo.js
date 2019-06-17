@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
 
 class PackInfo extends Component {
     render() {
@@ -20,6 +19,5 @@ class PackInfo extends Component {
     }
 }
 
-PackInfo.propTypes = {}
 
 export default PackInfo

@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
 
 class ShopBasket extends Component {
     state = {
@@ -37,7 +36,5 @@ class ShopBasket extends Component {
         )
     }
 }
-
-ShopBasket.propTypes = {}
 
 export default ShopBasket

@@ -1,9 +1,8 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
 
 class Price extends Component {
 
-    calculateFraction = x => ((x.toString().includes('.')) ? (x.toString().split('.').pop().length) : (0))
+    calculateFraction = x => ((x.toString().indexOf('.')) !== -1 ? (x.toString().split('.').pop().length) : (0))
 
     roundNumber = number => this.calculateFraction(number) > 2 ? number.toFixed(2) : number
 
@@ -60,6 +59,5 @@ class Price extends Component {
     }
 }
 
-Price.propTypes = {}
 
 export default Price

@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
 
 class SwitchPrice extends Component {
 
@@ -23,7 +22,5 @@ class SwitchPrice extends Component {
         )
     }
 }
-
-SwitchPrice.propTypes = {}
 
 export default SwitchPrice
